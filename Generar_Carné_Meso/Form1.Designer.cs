@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtNuevo = new System.Windows.Forms.TextBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnGuardarCarne = new System.Windows.Forms.Button();
             pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
@@ -48,9 +49,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = global::Generar_Carné_Meso.Properties.Resources.Logo_meso_;
-            pictureBox1.Location = new System.Drawing.Point(0, 12);
+            pictureBox1.Location = new System.Drawing.Point(371, 378);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new System.Drawing.Size(67, 57);
+            pictureBox1.Size = new System.Drawing.Size(188, 181);
             pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -58,11 +59,11 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(361, 174);
+            this.button1.Location = new System.Drawing.Point(361, 161);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(163, 63);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Generar Codigo Qr";
+            this.button1.Text = "Generar Carné y Codigo Qr";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -134,7 +135,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(361, 253);
+            this.btnLimpiar.Location = new System.Drawing.Point(361, 240);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(163, 63);
             this.btnLimpiar.TabIndex = 8;
@@ -142,11 +143,23 @@
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
+            // btnGuardarCarne
+            // 
+            this.btnGuardarCarne.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarCarne.Location = new System.Drawing.Point(361, 309);
+            this.btnGuardarCarne.Name = "btnGuardarCarne";
+            this.btnGuardarCarne.Size = new System.Drawing.Size(163, 63);
+            this.btnGuardarCarne.TabIndex = 9;
+            this.btnGuardarCarne.Text = "Guardar Carné";
+            this.btnGuardarCarne.UseVisualStyleBackColor = true;
+            this.btnGuardarCarne.Click += new System.EventHandler(this.btnGuardarCarne_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(696, 658);
+            this.Controls.Add(this.btnGuardarCarne);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNuevo);
@@ -156,10 +169,12 @@
             this.Controls.Add(this.pbFoto);
             this.Controls.Add(this.txtContenido);
             this.Controls.Add(this.button1);
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carné Meso";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -180,6 +195,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNuevo;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnGuardarCarne;
     }
 }
 
